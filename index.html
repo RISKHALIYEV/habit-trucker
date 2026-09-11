@@ -1,0 +1,1570 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questify - Gamified Odatlar Kuzatuvchisi</title>
+    <meta name="theme-color" content="#0b0914">
+    <link rel="apple-touch-icon" href="data:image/png;base64,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">
+    <link rel="manifest" href="data:application/manifest+json;base64,eyJuYW1lIjogIlF1ZXN0aWZ5IEFwcCIsICJzaG9ydF9uYW1lIjogIlF1ZXN0aWZ5IiwgInN0YXJ0X3VybCI6ICIuIiwgImRpc3BsYXkiOiAic3RhbmRhbG9uZSIsICJiYWNrZ3JvdW5kX2NvbG9yIjogIiMwYjA5MTQiLCAidGhlbWVfY29sb3IiOiAiIzBiMDkxNCIsICJpY29ucyI6IFt7InNyYyI6ICJkYXRhOmltYWdlL3BuZztiYXNlNjQsaVVBV1MwS0dnb0FBQUFOU1VoRlVnQUFBQUFBQUFEQUNBWUFBQUJTM0d3SEFBQUhXMGxFVlI0bk8zZFBZN2R4aEtHNFpMaC9XZ0JoZ05uQXBRN01aUm9ZVTRFSjg0RktITWdhQUZha1p5SUFLZUhUZlpQZFhWMTEvdGtGeGZYSmpuZng2bytkNDRrQWdBQUFBQUFBQUJiZXpQN0FuYjIrZDNiSDFyL3JQZGZ2dk96R29DSDJrazk1SzBvUnpzZVhDVVBnWDlDSWNyeG9CNzBCUDYzdnovOXJuVWQzejUrK05yNnY2VVFlVHlZQzdXaHp3VzlKN1NqL2gyVTRTVWV4aytsb2I4S29tYlFhL1ZjRDJVSVhvQ1MwS2NCbXhuMlVpM1hITFVNSVcvNktmam5BSzBRK0NjMTl4T3RDS0Z1OWk3NHU0VStwL1Erb3hSaCs1c3NmZHZ2SFBxYzBudmZ1UXpiM3BoSVB2eFIzdmFsU3A3SHJpWFk4cWFlZ2svbzg1NmUwVzVGMk9wbUNMNmVLRVhZNGlZSS9qaTdGMkhwaXhlNUR6L0IxM1AzUEZjdXdiSVh6bHZmM283TFlMa0xGcmtPUDhHM2MvZXNWeXZCVWhjcmtnOC93YmVYZSs0cmxXQ1pDK1d0NzlQcTA4RDlCWXJ3MWwvQnF0UGdsOWtYOElUd3IrSGJ4dzlmcjM0MTIvczM2TnkyazVWblRhdXRSTzR1U0lTMy9nNVdXWW5jclVDRWZ3K3JyRVN1Q2tENDk3SkNDZHdVZ1BEdnlYc0pYT3hqNmNQZ3NMdWYzTTkwOXBsZ2VnR3V3ay93OTNYMTg1MVpncWtyRU9HUDUyb2xtcmtPVFNzQTRZL0xVd21tRklEd3cwc0p6QXZnNWZRUG42enpNZjFqVU43K2NlVStJclZrV2dCV0g2Um1yMEptQlNEOHlKbFpBcE1DRUg0OG1WVUM4ek1BNFVmT2pEUEI4QUx3cVE5NmpNN1AwQUt3K3FDVzlTbzByQUNFSDYwc1MyQnlCaUQ4cUdWMUhoaFNBUGIrY24vODgrL3NTMWpHaUZ5cEY0RFZCMW9zVnFHaEt4RGhSNi9ScTVCcUFWaDk2aHpyRDJ0UUhjMmNEWnNBdlAyaFplUVVVQ3NBYjM5WTBzcmJrQW5BMngvYVJrMEJsUUtjMjBqNHk2UjdQK2VBWjJrSk5LWkFkd0ZZZlRCVGIvNVVWeURlL2hoTmV4V2EvcFZJWUthdUFyRDd0MkhmNzZONUZtQUNPRUl4N0RVWGdMYy9adEthQWt3QWhOWlVBRDc2Yk1lYU0wNUxMcnNuQU9zUFp0SDRTSlFWeUJrbWhLM3FBbkQ0aFNlOWgyRW1nQ0hlN3Y1UUFJUldWUURXSHh0TWlqbzlheEFUQUtGUkFDTzgxWDBxTGdEckR6eHJYWU9ZQUFpTkFqakZ5bVNEQWhnZ3pINFZGWUQ5SHl0b09RY3dBUkFhQlVCb0ZHQ3dudjJmczhONGp3WGd5eTlZMlZOK3F5WUFCMkI0Vi9zbEdWWWdoRVlCQnRMWTRUa0hqRVVCRUJvRlFHaS96cjZBbll4YVY5Si83bjkvL1RuazN4UFJtN3Yva2wrQmVEWjdSNmNNMTlLOHZ2L3kvVExyVElCS3N3T2ZZanIwb1FBRnZJWCtEb1dvUXdFdXJCVDRKK2Q3b1F5dlVZQ2ZkZ3A5RHRQaHRiQUZpQkQ0JjB5SFlBVWc5SGxScDhQV0JTRHc3YUlVWXJzQ0VQb3hkbDJYbGk4QWdiZTMwM1JZdmdEcHc2Y1E0NjBjK05UeUJVaFJDSDA3QlQ2MVhRRlNGS0xlem9GUGJWK0FGSVY0TFZMZ1UrRUtrSXBZaU1pQlQ0VXZRT29jamwzS1FPRHpLTUNOVmFjRGdTOUhBU3A0TFFTQmIwY0JPc3dxQklIWGMvdVZTQkcrRnRsRHF4QUV2azdwMXlGRitGTWhFQndGUUdnVVlDQ04xWVgxWnl3S2dOQW9BRUtyS2tEdEh6ME5XS3Y5cFBLeEFIY2ZJZUVaTy94Y1QvbGxCWEtNOG94SEFSQWFCVUJvUlFVNDcxRWNoT3V4eXRpbytSV0lBeFBBS1Vwamd3SWdNQXFBMElvTHdEbWdEeXZOV0MzN3Z3Z1RBTUZSQUllWUZuYXFDc0FhQkk5YTF4OFJKb0FwM3V6K1VBQ0VWbDBBMWlCNDByUCtpREFCM0dGTnN0VmRBS1lBWnRINFkzcWFDc0NYWk5yeGhoK25KWmVzUUFpdHVRQWNoakZUNytIM3dBUndoUFhJWGxjQm1BSnRDSG9mcmJlL0NCTUF3YWtXZ0NtQTBiVC9oUEx1QXZDUnFBN1dvamE5K1ZPWkFKd0Y2aEg0ZXBxNy8ySElHWUFTUU51b3Y1eEZyUUNzUXJDa2xiZGhud0l4QmFCbDVGL05wVm9BcGtDZDR4ekFlYUNPWnM2Ry92OEFUQUgwR3YwWE02b1hJRzBuSlVDcnEvQnJieGxESmdDclVEblduM0lqY21YeXF4Qk1BZFN5K2p1cGh4V0FWUWl0TEZhZnc5QUpRQWxReXpMOElnWXJFT2NCOUJpZEgvTmZoMllLSU1kcTd6OHpLUUNyRUo1WXJ6NEhzd2xBQ1pBeksvd2l4aXNRSlVCcVp2aEZISHdsa2hMRU5XUG5UNWtYZ0UrRmNNYzZIMU1tQUtzUVpxOCtoMmtyRUNXSXkwdjRSU2FmQVNoQlBKN0NMeUxpWWgvLy9PN3RqL04vUGtvdys0QUVQYm1mNmV3em9Zc0NpTHd1Z1lpUFR3blFML2R6bkIxK0VRY2ZneDZ1SGdZcjBmbzhoMS9FVVFGRUtNRnV2SWRmeEZrQlJDakJMbFlJdjRpak0wQXFkeVlRNFhEczJkM1B5RnY0UlJ3WDRNRGhlQjJydlBYUDNLMUFLVmFpTmF3WWZwRUZKc0NCbGNpbjFWYWVsUHNMVExFUytiSHFXLzlzbVFzOVl4ck10ZnBiLzJ5cGl6MjdLb0VJUlJqcDZkbXVGbjZSaFF0d3VDc0NKZEJ6OXp4WERQNWgyUXMvWXhxTXMrTmIvMnpwaTA5UkJEMjdCLyt3eFUya0tFSzdLTUUvYkhVenFhY2lpRkFHa2JMbnNWdndEMXZlMUZtdUJJZklVNkgwM25jTnYwaUFBcHpkbFNIS1ZDaTl6NTFEZnhiaUpsT2xVMEZranpMVTNFK1U0QjlDM1d6cXFRZ2lMOE1qc2tZaFdxNDVXdkFQSVcvNlNra1pSRjZIUzJSdUtYcXVKMnJvejhJL2dDdWxaVGprZmpWYnN4aGEvdzVDL3hJUDQwRnRHYzQwdjdQUVV5WkNuOGVEcWRSVENDc0V2aHdQcXBPSFFoRDRkank0Z1RUTFFjZ0JBQUFBQUFDQVZ2OERlVDVYTjRBa3pxZ0FBQUFBU1VWT1JLNUNZSUk9IiwgInNpemVzIjogIjUxMng1MTIiLCAidHlwZSI6ICJpbWFnZS9wbmcifV0=">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        darkBg: '#0b0914',
+                        cardBg: '#131022',
+                        cardBorder: '#201b38',
+                        accentPurple: '#a855f7',
+                        accentGold: '#eab308',
+                        accentRed: '#ef4444'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #0b0914;
+            color: #f3f4f6;
+            font-family: system-ui, -apple-system, sans-serif;
+            user-select: none;
+            -webkit-tap-highlight-color: transparent;
+        }
+        .glass-card {
+            background: #131022;
+            border: 1px solid #201b38;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+        }
+        .glass-modal {
+            background: rgba(11, 9, 20, 0.95);
+            backdrop-filter: blur(14px);
+        }
+        ::-webkit-scrollbar { width: 4px; }
+        ::-webkit-scrollbar-thumb { background: #a855f7; border-radius: 4px; }
+        @keyframes pulseGlow {
+            0%, 100% { box-shadow: 0 0 15px rgba(168, 85, 247, 0.2); }
+            50% { box-shadow: 0 0 25px rgba(168, 85, 247, 0.4); }
+        }
+        .glow-box { animation: pulseGlow 3s infinite; }
+    </style>
+</head>
+<body class="pb-24 min-h-screen flex flex-col justify-between">
+
+    <!-- TOP APP BAR -->
+    <header class="w-full glass-card sticky top-0 z-40 px-4 py-3 flex items-center justify-between border-b border-[#201b38]">
+        <div class="flex items-center space-x-2">
+            <span class="text-base font-extrabold text-white tracking-wide" id="topHeaderTitle">Bugungi Kvestlar</span>
+            <i class="fa-solid fa-chevron-down text-xs text-purple-400"></i>
+        </div>
+        <div class="flex items-center space-x-3">
+            <button id="installAppBtn" class="hidden text-yellow-400 hover:text-yellow-300 p-1" title="Ilovani o'rnatish">
+                <i class="fa-solid fa-download text-base"></i>
+            </button>
+            <button onclick="toggleSortMenu()" class="text-gray-300 hover:text-white p-1" title="Saralash">
+                <i class="fa-solid fa-equals text-base"></i>
+            </button>
+            <button onclick="openCalendarModal()" class="text-gray-300 hover:text-white p-1" title="Kalendar">
+                <i class="fa-solid fa-bars-staggered text-base"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- SORT DROPDOWN -->
+    <div id="sortMenu" class="hidden absolute right-4 top-14 z-50 bg-[#161329] border border-[#262142] rounded-xl p-2 w-48 shadow-2xl space-y-1">
+        <button onclick="sortQuests('name')" class="w-full text-left px-3 py-2 text-xs rounded-lg hover:bg-purple-950 flex items-center space-x-3 text-gray-200 font-medium">
+            <i class="fa-solid fa-arrow-down-a-z text-purple-400 w-4"></i>
+            <span>Nomi bo'yicha</span>
+        </button>
+        <button onclick="sortQuests('time')" class="w-full text-left px-3 py-2 text-xs rounded-lg hover:bg-purple-950 flex items-center space-x-3 text-gray-200 font-medium">
+            <i class="fa-regular fa-clock text-purple-400 w-4"></i>
+            <span>Vaqti bo'yicha</span>
+        </button>
+        <button onclick="sortQuests('points')" class="w-full text-left px-3 py-2 text-xs rounded-lg hover:bg-purple-950 flex items-center space-x-3 text-gray-200 font-medium">
+            <i class="fa-solid fa-star text-purple-400 w-4"></i>
+            <span>Ballar bo'yicha</span>
+        </button>
+    </div>
+
+    <!-- MAIN CONTAINER -->
+    <main class="flex-1 max-w-md w-full mx-auto p-4 relative space-y-4">
+
+        <!-- ================= 1. DAILY / QUESTS PAGE ================= -->
+        <section id="page-daily" class="space-y-4">
+            <div class="flex space-x-4 overflow-x-auto pb-1 text-xs font-semibold text-gray-400 border-b border-[#201b38]">
+                <button onclick="filterQuests('all')" class="quest-tab pb-2 text-white border-b-2 border-purple-500 whitespace-nowrap" data-tab="all">Barcha Kvestlar</button>
+                <button onclick="filterQuests('Routine')" class="quest-tab pb-2 hover:text-white whitespace-nowrap" data-tab="Routine">Kunlik Odatlar</button>
+                <button onclick="filterQuests('Negative')" class="quest-tab pb-2 hover:text-white whitespace-nowrap" data-tab="Negative">Salbiy Odatlar</button>
+                <button onclick="filterQuests('Task')" class="quest-tab pb-2 hover:text-white whitespace-nowrap" data-tab="Task">Vazifalar</button>
+            </div>
+
+            <!-- AI / QUEST ANALYTICS PANEL -->
+            <div class="glass-card rounded-2xl p-3.5 space-y-2 border border-purple-500/30 bg-gradient-to-r from-[#17132a] to-[#131022]">
+                <div class="flex items-center justify-between text-xs">
+                    <div class="flex items-center space-x-2 text-purple-300 font-bold">
+                        <i class="fa-solid fa-wand-magic-sparkles text-purple-400"></i>
+                        <span>Kunlik Tahlil & AI Maslahat</span>
+                    </div>
+                    <span id="aiCompletionRateBadge" class="bg-purple-950/80 text-purple-300 px-2 py-0.5 rounded text-[10px] font-bold border border-purple-500/30">0% bajarildi</span>
+                </div>
+                <p id="aiAnalysisText" class="text-[11px] text-gray-300 leading-relaxed">Bugungi kvestlarni bajarib boring. Kunlik natijalaringizni tahlil qilish uchun kvestlarni yakunlang!</p>
+            </div>
+
+            <div class="glass-card rounded-2xl p-4 space-y-3 glow-box">
+                <div class="flex items-center justify-between text-xs text-gray-400">
+                    <span class="font-bold text-white text-sm">Daraja (Level)</span>
+                    <span id="headerXpText">0/35 XP</span>
+                </div>
+                <div class="flex items-center space-x-3">
+                    <div class="w-12 h-12 rounded-2xl bg-gradient-to-tr from-purple-600 to-indigo-600 flex items-center justify-center font-extrabold text-xl text-white shadow-lg overflow-hidden p-1">
+                        <img src="data:image/png;base64,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" alt="Target" style="width:100%; height:100%; object-fit:contain;">
+                </div>
+                <div class="flex-1 bg-[#1e1936] h-2.5 rounded-full overflow-hidden">
+                    <div id="headerXpBar" class="bg-gradient-to-r from-purple-500 to-cyan-400 h-full transition-all duration-500" style="width: 0%;"></div>
+                </div>
+            </div>
+            <div class="flex items-center justify-between pt-1 text-xs">
+                <div class="flex items-center space-x-1.5 text-yellow-400 font-bold">
+                    <i class="fa-solid fa-star text-xs"></i>
+                    <span id="headerTotalPoints">Jami Ballar: 0 Ball</span>
+                </div>
+                <div class="bg-red-950/60 border border-red-500/30 px-2.5 py-0.5 rounded-md text-red-400 font-bold text-[11px]" id="headerPenalty">
+                    0
+                </div>
+            </div>
+        </div>
+
+        <!-- BUGUNGI FAOL KVESTLAR -->
+        <div class="flex items-center space-x-2 text-xs font-bold text-gray-300 pt-1">
+            <i class="fa-regular fa-clipboard text-purple-400"></i>
+            <span id="activeQuestsHeaderLabel">Bugungi Faol Kvestlar</span>
+        </div>
+        <div class="space-y-3" id="activeQuestsList"></div>
+
+        <!-- BUGUNGI BAJARILGAN KVESTLAR -->
+        <div class="pt-2">
+            <div class="flex items-center space-x-2 text-xs font-bold text-gray-300 mb-3">
+                <i class="fa-solid fa-circle-check text-purple-400"></i>
+                <span>Bugungi Bajarilgan Kvestlar</span>
+            </div>
+            <div class="space-y-3" id="completedQuestsList"></div>
+        </div>
+
+        <!-- BOSHQA KUNGI (BOSHQA) KVESTLAR -->
+        <div class="pt-4 border-t border-[#201b38] mt-6">
+            <div class="flex items-center justify-between text-xs font-bold text-gray-400 mb-3">
+                <div class="flex items-center space-x-2">
+                    <i class="fa-regular fa-calendar-days text-purple-400"></i>
+                    <span>Boshqa Kunlarga Rejalashtirilgan Kvestlar</span>
+                </div>
+                <span id="otherQuestsCountBadge" class="bg-[#1b1730] px-2 py-0.5 rounded text-[10px] text-purple-300">0</span>
+            </div>
+            <div class="space-y-3" id="otherQuestsList"></div>
+        </div>
+    </section>
+
+    <!-- ================= 2. MOOD PAGE ================= -->
+    <section id="page-mood" class="space-y-4 hidden">
+        <div class="flex justify-between items-center">
+            <h1 class="text-lg font-extrabold text-white">Kayfiyat</h1>
+            <div class="flex space-x-2 text-gray-400">
+                <i class="fa-solid fa-table-cells text-sm"></i>
+                <i class="fa-regular fa-calendar text-sm"></i>
+            </div>
+        </div>
+        <div class="glass-card rounded-2xl p-4 space-y-3">
+            <p class="text-xs text-gray-300">Bugungi kayfiyatingizni tanlang:</p>
+            <div class="grid grid-cols-4 gap-2">
+                <button onclick="saveMood('Xursand', '😊')" class="p-3 bg-[#1b1730] hover:bg-purple-900/40 rounded-xl text-center transition-all"><span class="text-xl">😊</span><div class="text-[10px] text-gray-300 mt-1">Xursand</div></button>
+                <button onclick="saveMood('Mahsuldor', '🚀')" class="p-3 bg-[#1b1730] hover:bg-purple-900/40 rounded-xl text-center transition-all"><span class="text-xl">🚀</span><div class="text-[10px] text-gray-300 mt-1">Mahsuldor</div></button>
+                <button onclick="saveMood('O\'rta', '😐')" class="p-3 bg-[#1b1730] hover:bg-purple-900/40 rounded-xl text-center transition-all"><span class="text-xl">😐</span><div class="text-[10px] text-gray-300 mt-1">O'rta</div></button>
+                <button onclick="saveMood('Charchagan', '😴')" class="p-3 bg-[#1b1730] hover:bg-purple-900/40 rounded-xl text-center transition-all"><span class="text-xl">😴</span><div class="text-[10px] text-gray-300 mt-1">Charchagan</div></button>
+            </div>
+        </div>
+        <div id="moodHistoryList" class="space-y-3"></div>
+    </section>
+
+    <!-- ================= 3. JOURNEYS PAGE ================= -->
+    <section id="page-journeys" class="space-y-4 hidden">
+        <div>
+            <h1 class="text-lg font-extrabold text-white">Sayohatlar (Journeys)</h1>
+            <p class="text-[11px] text-gray-400">Tayyor reja va odatlar to'plami</p>
+        </div>
+
+        <div onclick="alert('Tez kunda suniy intellekt orqali maxsus reja tuzish imkoniyati qo\'shiladi!')" class="glass-card rounded-2xl p-4 flex items-center justify-between border border-purple-500/30 cursor-pointer hover:border-purple-500">
+            <div class="flex items-center space-x-3">
+                <div class="w-10 h-10 rounded-xl bg-purple-600/20 text-purple-400 flex items-center justify-center">
+                    <i class="fa-solid fa-wand-magic-sparkles"></i>
+                </div>
+                <div>
+                    <div class="flex items-center space-x-2">
+                        <h3 class="font-bold text-xs text-white">O'z Rejangizni Yarating</h3>
+                        <span class="bg-purple-950 text-purple-300 text-[9px] px-1.5 py-0.5 rounded font-bold">YANGI</span>
+                    </div>
+                    <p class="text-[10px] text-gray-400">Suniy intellekt yordamida reja tuzing...</p>
+                </div>
+            </div>
+            <i class="fa-solid fa-chevron-right text-gray-500 text-xs"></i>
+        </div>
+
+        <div class="text-xs font-bold text-gray-300">Tavsiya etilgan</div>
+        
+        <div onclick="alert('Deep Focus Mode rejasiga xush kelibsiz!')" class="glass-card rounded-2xl p-4 space-y-3 border border-purple-500/30 bg-gradient-to-br from-[#18132d] to-[#120f20] cursor-pointer hover:border-purple-500">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center space-x-2 text-cyan-400 font-bold text-sm">
+                    <i class="fa-solid fa-chart-line"></i>
+                    <span class="text-white">Chuqur Diqqat Rejimi</span>
+                </div>
+                <i class="fa-solid fa-award text-yellow-400"></i>
+            </div>
+            <p class="text-[11px] text-gray-300 leading-relaxed">Pomodoro texnikasi va haftalik tahlillar yordamida mahsuldorlikni oshiring.</p>
+            <div class="flex space-x-2 pt-1">
+                <span class="text-[10px] bg-[#1a1630] text-purple-300 px-2.5 py-1 rounded-lg"><i class="fa-regular fa-calendar mr-1"></i>30 Kun</span>
+                <span class="text-[10px] bg-[#162130] text-cyan-300 px-2.5 py-1 rounded-lg"><i class="fa-solid fa-dumbbell mr-1"></i>5 odat</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= 4. STATS PAGE ================= -->
+    <section id="page-stats" class="space-y-4 hidden">
+        <h1 class="text-lg font-extrabold text-white">Statistika</h1>
+
+        <div class="flex bg-[#131022] rounded-xl p-1 border border-[#201b38]">
+            <button onclick="switchStatsTab('weekly')" id="statsTabWeekly" class="flex-1 py-1.5 rounded-lg text-xs font-semibold text-gray-400">Haftalik</button>
+            <button onclick="switchStatsTab('monthly')" id="statsTabMonthly" class="flex-1 py-1.5 rounded-lg text-xs font-semibold text-gray-400">Oylik</button>
+            <button onclick="switchStatsTab('progress')" id="statsTabProgress" class="flex-1 py-1.5 rounded-lg text-xs font-semibold bg-purple-600 text-white">Progress</button>
+        </div>
+
+        <!-- Weekly View -->
+        <div id="statsWeekly" class="space-y-4 hidden">
+            <div class="glass-card rounded-2xl p-4 flex items-center justify-between text-xs border border-purple-500/20">
+                <button onclick="changeWeek(-1)" class="text-gray-400 hover:text-white p-1"><i class="fa-solid fa-chevron-left"></i></button>
+                <span class="font-bold text-white text-sm" id="weeklyRangeLabel">7/9 - 13/9</span>
+                <button onclick="changeWeek(1)" class="text-gray-400 hover:text-white p-1"><i class="fa-solid fa-chevron-right"></i></button>
+            </div>
+            <div class="text-center text-[10px] text-gray-400 grid grid-cols-7 font-bold py-1">
+                <span>Du</span><span>Se</span><span>Ch</span><span>Pa</span><span>Ju</span><span>Sh</span><span>Ya</span>
+            </div>
+            <div class="space-y-3" id="statsWeeklyList"></div>
+        </div>
+
+        <!-- Monthly View -->
+        <div id="statsMonthly" class="space-y-4 hidden">
+            <div class="glass-card rounded-2xl p-4 flex items-center justify-between text-xs border border-purple-500/20">
+                <span class="font-bold text-white text-sm" id="statsMonthlyLabel">Sentyabr 2026</span>
+            </div>
+            <div class="glass-card rounded-3xl p-4 space-y-4 border border-purple-500/20">
+                <div class="grid grid-cols-7 gap-1 text-center text-xs font-bold text-gray-400 mb-2">
+                    <span>Du</span><span>Se</span><span>Ch</span><span>Pa</span><span>Ju</span><span>Sh</span><span>Ya</span>
+                </div>
+                <div class="grid grid-cols-7 gap-1.5 text-center text-xs" id="monthlyCalendarGrid"></div>
+            </div>
+        </div>
+
+        <!-- Progress View -->
+        <div id="statsProgress" class="space-y-4">
+            <div class="glass-card rounded-3xl p-4 space-y-3 border border-purple-500/30">
+                <div class="flex items-center space-x-2 text-accentPurple">
+                    <i class="fa-solid fa-chart-line text-sm"></i>
+                    <span class="text-white text-base font-extrabold">Progress</span>
+                </div>
+                <div class="flex space-x-2 overflow-x-auto pb-1 text-xs" id="progressFilterTabs">
+                    <button onclick="filterProgress('all')" class="prog-filter bg-cyan-500 text-black px-4 py-1.5 rounded-xl font-bold flex items-center space-x-1.5 shadow-md" data-filter="all"><i class="fa-solid fa-check text-xs"></i><span>Barcha Vaqt</span></button>
+                    <button onclick="filterProgress('today')" class="prog-filter bg-[#1c1733] border border-[#2b2348] text-gray-400 px-4 py-1.5 rounded-xl font-semibold" data-filter="today">Bugun</button>
+                    <button onclick="filterProgress('week')" class="prog-filter bg-[#1c1733] border border-[#2b2348] text-gray-400 px-4 py-1.5 rounded-xl font-semibold" data-filter="week">Hafta</button>
+                    <button onclick="filterProgress('monthly')" class="prog-filter bg-[#1c1733] border border-[#2b2348] text-gray-400 px-4 py-1.5 rounded-xl font-semibold" data-filter="monthly">Oy</button>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-3 gap-3" id="progressCirclesGrid"></div>
+
+            <div class="glass-card rounded-3xl p-4 flex items-center justify-between border border-purple-500/20">
+                <div class="flex items-center space-x-3 text-purple-400">
+                    <i class="fa-solid fa-fire text-lg"></i>
+                    <span class="text-xs text-gray-300 font-bold">Joriy Seriya (Streak)</span>
+                </div>
+                <span class="font-extrabold text-sm text-white" id="statStreak">0 kun</span>
+            </div>
+
+            <div class="glass-card rounded-3xl p-4 flex items-center justify-between border border-purple-500/20">
+                <div class="flex items-center space-x-3 text-purple-400">
+                    <i class="fa-solid fa-star text-lg"></i>
+                    <span class="text-xs text-gray-300 font-bold">Mukammal Kunlar</span>
+                </div>
+                <span class="font-extrabold text-sm text-white" id="statPerfect">0 kun</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= 5. PROFILE PAGE ================= -->
+    <section id="page-profile" class="space-y-4 hidden">
+        <div class="flex justify-between items-center px-1">
+            <h1 class="text-xl font-extrabold text-white">Profil</h1>
+            <div class="flex items-center space-x-3">
+                <div onclick="alert('Bulutga sinxronizatsiya qilindi!')" class="w-8 h-8 rounded-full bg-purple-950/80 border border-purple-500/30 flex items-center justify-center text-purple-400 cursor-pointer hover:bg-purple-900" title="Bulutga saqlash">
+                    <i class="fa-solid fa-cloud text-sm"></i>
+                </div>
+                <div onclick="alert('Siz allaqachon bepul ochiq kodli versiyadasiz!')" class="bg-cardBg border border-yellow-500/30 px-3 py-1.5 rounded-xl flex items-center space-x-1.5 cursor-pointer hover:border-yellow-400">
+                    <i class="fa-solid fa-star text-yellow-400 text-xs"></i>
+                    <span class="text-xs font-bold text-yellow-400">Premiumga o'tish</span>
+                </div>
+                <div onclick="alert('Sozlamalar menyusi')" class="text-gray-300 p-1 cursor-pointer hover:text-white"><i class="fa-solid fa-bars text-base"></i></div>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-2 gap-3">
+            <div class="glass-card rounded-3xl p-4 flex flex-col items-center text-center space-y-3 border border-purple-500/20">
+                <div class="relative">
+                    <div class="w-20 h-20 rounded-full bg-gradient-to-tr from-purple-600 via-indigo-500 to-pink-500 p-1 shadow-lg">
+                        <div class="w-full h-full bg-[#131022] rounded-full overflow-hidden flex items-center justify-center p-1">
+                            <img src="data:image/png;base64,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" alt="Target" style="width:100%; height:100%; object-fit:contain;">
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full">
+                    <div class="flex items-center justify-center space-x-1.5">
+                        <h2 class="font-extrabold text-sm text-white truncate max-w-[110px]" id="profileNameDisplay">ROSKHALIYEV</h2>
+                        <button onclick="editProfileName()" class="text-purple-400 hover:text-white p-1" title="Ismni o'zgartirish"><i class="fa-solid fa-pen text-[10px]"></i></button>
+                    </div>
+                    <div class="inline-block bg-[#1f1a38] text-purple-300 text-[10px] px-3 py-0.5 rounded-full font-bold mt-1 border border-purple-500/30" id="profileLvlBadge">DARAJA 1</div>
+                </div>
+                <div class="w-full space-y-1">
+                    <div class="flex justify-between text-[10px] text-gray-400 font-bold">
+                        <span id="profileLvlText">DARAJA 1</span>
+                        <span id="profileXpText">0/35 XP</span>
+                    </div>
+                    <div class="w-full bg-[#1e1936] h-2 rounded-full overflow-hidden">
+                        <div id="profileXpBar" class="bg-gradient-to-r from-purple-500 to-pink-500 h-full" style="width: 0%;"></div>
+                    </div>
+                </div>
+                <div class="grid grid-cols-2 gap-2 w-full pt-1">
+                    <div class="bg-[#19142b] border border-[#262145] rounded-xl p-2 flex items-center justify-center space-x-1.5" title="Jami ballar">
+                        <i class="fa-solid fa-star text-yellow-400 text-xs"></i>
+                        <span class="font-extrabold text-sm text-yellow-400" id="profileTotalPts">0</span>
+                    </div>
+                    <div class="bg-[#19142b] border border-[#262145] rounded-xl p-2 flex items-center justify-center space-x-1.5" title="Jarima ballar">
+                        <i class="fa-solid fa-bolt text-red-400 text-xs"></i>
+                        <span class="font-extrabold text-sm text-red-400">0</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="glass-card rounded-3xl p-4 space-y-3 border border-purple-500/20 flex flex-col justify-between">
+                <div class="flex justify-between items-center text-xs font-bold text-purple-300">
+                    <button onclick="changeProfileCalendarMonth(-1)" class="text-gray-400 hover:text-white"><i class="fa-solid fa-chevron-left text-[10px]"></i></button>
+                    <span id="profileCalMonthLabel">Sentyabr 2026</span>
+                    <button onclick="changeProfileCalendarMonth(1)" class="text-gray-400 hover:text-white"><i class="fa-solid fa-chevron-right text-[10px]"></i></button>
+                </div>
+                <div class="grid grid-cols-7 gap-1 text-center text-[10px] text-gray-400 font-bold">
+                    <span>Du</span><span>Se</span><span>Ch</span><span>Pa</span><span>Ju</span><span>Sh</span><span>Ya</span>
+                </div>
+                <div class="grid grid-cols-7 gap-1 text-center text-[10px]" id="profileMiniCalendar"></div>
+                <div class="flex justify-center space-x-1.5 pt-1">
+                    <span class="w-2 h-2 rounded-full bg-red-500 inline-block"></span>
+                    <span class="w-2 h-2 rounded-full bg-cyan-400 inline-block"></span>
+                    <span class="w-2 h-2 rounded-full bg-purple-500 inline-block"></span>
+                    <span class="w-2 h-2 rounded-full bg-pink-500 inline-block"></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-2 gap-3">
+            <div class="glass-card rounded-3xl p-4 space-y-2 border border-purple-500/20 text-center">
+                <h3 class="font-bold text-xs text-white uppercase tracking-wider">SKILL RADAR</h3>
+                <div class="relative py-2 flex justify-center items-center w-full h-[140px]">
+                    <canvas id="skillRadarCanvas" width="130" height="130" class="mx-auto"></canvas>
+                </div>
+                <div class="grid grid-cols-2 text-[9px] text-gray-400 font-bold pt-1">
+                    <span>Salomatlik</span><span>Tajriba</span>
+                    <span>Mahsuldorlik</span><span class="text-purple-400">O'rganish</span>
+                </div>
+            </div>
+
+            <div class="glass-card rounded-3xl p-4 space-y-4 border border-purple-500/20 flex flex-col justify-between text-center">
+                <div class="flex justify-between items-center">
+                    <button onclick="changeHealthPercent(-10)" class="text-gray-500 hover:text-white text-xs"><i class="fa-solid fa-chevron-left"></i></button>
+                    <span class="font-bold text-lg text-white" id="profileHealthPct">0%</span>
+                    <button onclick="changeHealthPercent(10)" class="text-gray-500 hover:text-white text-xs"><i class="fa-solid fa-chevron-right"></i></button>
+                </div>
+                <div id="healthRingContainer" class="relative w-20 h-20 mx-auto flex items-center justify-center rounded-full border-4 border-[#262145] border-t-red-500">
+                    <span class="font-extrabold text-sm text-white" id="profileHealthCenterPct">0%</span>
+                </div>
+                <div class="font-bold text-xs text-gray-300">Salomatlik</div>
+            </div>
+        </div>
+
+        <div class="glass-card rounded-3xl p-4 space-y-3 border border-purple-500/20">
+            <h3 class="font-bold text-xs text-white tracking-wider">KO'NIKMA BALLARI</h3>
+            <div class="space-y-2.5 text-xs" id="profileSkillPointsDetailed"></div>
+        </div>
+
+        <div class="grid grid-cols-2 gap-3">
+            <div class="glass-card rounded-3xl p-4 space-y-2 border border-purple-500/20">
+                <div class="font-bold text-xs text-gray-400 uppercase">KAYFIYAT</div>
+                <div class="flex items-center space-x-2 pt-1">
+                    <span class="text-2xl" id="profileMoodEmoji">😐</span>
+                    <span class="font-bold text-sm text-white" id="profileMoodText">O'rta</span>
+                </div>
+            </div>
+            <div onclick="editDailyNotes()" class="glass-card rounded-3xl p-4 space-y-2 border border-purple-500/20 cursor-pointer hover:border-purple-500">
+                <div class="font-bold text-xs text-gray-400 uppercase">KUNLIK ESLATMA</div>
+                <div class="text-xs text-gray-300 pt-1 truncate" id="profileDailyNotesDisplay">-</div>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-2 gap-3">
+            <div class="glass-card rounded-3xl p-4 space-y-3 border border-purple-500/20">
+                <div class="flex justify-between items-center text-xs">
+                    <span class="font-bold text-white uppercase">YUTUQLAR</span>
+                    <span class="text-purple-400 font-bold" id="achievementCountText">0/29</span>
+                </div>
+                <div class="bg-[#19142b] border border-[#262145] rounded-2xl p-3 flex items-center space-x-3 opacity-50" id="achievementCard">
+                    <div class="w-10 h-10 rounded-xl bg-gray-800 text-gray-500 flex items-center justify-center font-bold">
+                        <i class="fa-solid fa-lock text-sm" id="achievementIcon"></i>
+                    </div>
+                    <div>
+                        <div class="font-bold text-xs text-gray-400" id="achievementTitle">Boshlovchi</div>
+                        <div class="text-[9px] text-gray-500" id="achievementDesc">Birinchi kvest bajarildi</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="glass-card rounded-3xl p-4 space-y-3 border border-purple-500/20">
+                <div class="font-bold text-xs text-white uppercase">PROGRESS STATISTIKASI</div>
+                <div class="grid grid-cols-2 gap-2">
+                    <div class="bg-[#19142b] border border-[#262145] rounded-2xl p-3 text-center">
+                        <i class="fa-solid fa-chart-bar text-purple-400 text-xs mb-1"></i>
+                        <div class="font-extrabold text-sm text-white" id="statAverageDaily">0</div>
+                        <div class="text-[9px] text-gray-400">Kunlik O'rtacha</div>
+                    </div>
+                    <div class="bg-[#19142b] border border-[#262145] rounded-2xl p-3 text-center">
+                        <div class="font-extrabold text-sm text-cyan-400" id="statCompletionPct">0%</div>
+                        <div class="text-[9px] text-gray-400">Bajarilish...</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<!-- FLOATING ADD BUTTON -->
+<button onclick="openAddQuestModal()" class="fixed bottom-20 right-5 z-40 w-14 h-14 bg-gradient-to-tr from-purple-600 to-pink-500 text-white rounded-full flex items-center justify-center shadow-2xl hover:scale-105 active:scale-95 transition-all glow-box" title="Kvest qo'shish">
+    <i class="fa-solid fa-plus text-lg"></i>
+</button>
+
+<!-- ================= ADD QUEST MODAL ================= -->
+<div id="addQuestModal" class="fixed inset-0 z-50 glass-modal hidden flex flex-col justify-end">
+    <div class="glass-card rounded-t-3xl p-5 max-h-[90vh] overflow-y-auto space-y-4 border-t border-[#262145]">
+        <div class="flex justify-between items-center border-b border-[#201b38] pb-3">
+            <h2 class="font-extrabold text-sm text-white">Yangi Kvest Qo'shish</h2>
+            <button onclick="closeAddQuestModal()" class="text-gray-400 hover:text-white"><i class="fa-solid fa-xmark text-base"></i></button>
+        </div>
+
+        <div class="space-y-1">
+            <div class="bg-[#17132a] border border-[#262145] rounded-xl px-4 py-2 flex items-center space-x-3">
+                <i class="fa-solid fa-pen text-purple-400 text-xs"></i>
+                <input type="text" id="questTitleInput" placeholder="Kvest nomi (masalan: Kitob o'qish)" class="w-full bg-transparent text-xs text-white focus:outline-none">
+            </div>
+        </div>
+
+        <!-- REPEAT / TAKRORLANISH QISMI -->
+        <div class="space-y-2">
+            <label class="text-[10px] text-gray-400 font-bold uppercase">Takrorlanish (Repeat)</label>
+            <div class="grid grid-cols-2 gap-2">
+                <button type="button" onclick="selectRepeatMode('every_day')" id="rep-every_day" class="repeat-btn p-3 rounded-2xl border border-purple-500 bg-purple-600/20 text-white text-xs font-semibold flex items-center space-x-2.5 transition-all">
+                    <i class="fa-solid fa-repeat text-purple-400 text-sm"></i>
+                    <span>Every Day</span>
+                </button>
+                <button type="button" onclick="selectRepeatMode('specific_days')" id="rep-specific_days" class="repeat-btn p-3 rounded-2xl border border-[#262145] bg-[#17132a] text-gray-400 text-xs font-semibold flex items-center space-x-2.5 hover:text-white transition-all">
+                    <i class="fa-solid fa-bars-staggered text-sm"></i>
+                    <span>Specific Days</span>
+                </button>
+                <button type="button" onclick="selectRepeatMode('one_time')" id="rep-one_time" class="repeat-btn p-3 rounded-2xl border border-[#262145] bg-[#17132a] text-gray-400 text-xs font-semibold flex items-center space-x-2.5 hover:text-white transition-all">
+                    <i class="fa-regular fa-calendar text-sm"></i>
+                    <span>One Time</span>
+                </button>
+                <button type="button" onclick="selectRepeatMode('every_other_day')" id="rep-every_other_day" class="repeat-btn p-3 rounded-2xl border border-[#262145] bg-[#17132a] text-gray-400 text-xs font-semibold flex items-center space-x-2.5 hover:text-white transition-all">
+                    <i class="fa-regular fa-clock text-sm"></i>
+                    <span>Every Other Day</span>
+                </button>
+            </div>
+        </div>
+
+        <!-- SPECIFIC DAYS SELECTOR CONTAINER -->
+        <div id="specificDaysContainer" class="glass-card rounded-2xl p-3 space-y-2 border border-purple-500/20 hidden">
+            <div class="text-[10px] text-gray-400 font-bold uppercase">Repeat on (Qaysi kunlari chiqsin):</div>
+            <div class="flex justify-between items-center" id="daysToggleList">
+                <button type="button" onclick="toggleDay('Du')" class="day-btn w-9 h-9 rounded-full border border-[#262145] bg-[#17132a] text-gray-400 text-xs font-bold transition-all" data-day="Du">Du</button>
+                <button type="button" onclick="toggleDay('Se')" class="day-btn w-9 h-9 rounded-full border border-[#262145] bg-[#17132a] text-gray-400 text-xs font-bold transition-all" data-day="Se">Se</button>
+                <button type="button" onclick="toggleDay('Ch')" class="day-btn w-9 h-9 rounded-full border border-[#262145] bg-[#17132a] text-gray-400 text-xs font-bold transition-all" data-day="Ch">Ch</button>
+                <button type="button" onclick="toggleDay('Pa')" class="day-btn w-9 h-9 rounded-full border border-[#262145] bg-[#17132a] text-gray-400 text-xs font-bold transition-all" data-day="Pa">Pa</button>
+                <button type="button" onclick="toggleDay('Ju')" class="day-btn w-9 h-9 rounded-full border border-[#262145] bg-[#17132a] text-gray-400 text-xs font-bold transition-all" data-day="Ju">Ju</button>
+                <button type="button" onclick="toggleDay('Sh')" class="day-btn w-9 h-9 rounded-full border border-[#262145] bg-[#17132a] text-gray-400 text-xs font-bold transition-all" data-day="Sh">Sh</button>
+                <button type="button" onclick="toggleDay('Ya')" class="day-btn w-9 h-9 rounded-full border border-[#262145] bg-[#17132a] text-gray-400 text-xs font-bold transition-all" data-day="Ya">Ya</button>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-2 gap-3">
+            <div class="bg-[#17132a] border border-[#262145] rounded-xl p-3 flex items-center space-x-3">
+                <i class="fa-regular fa-calendar text-purple-400"></i>
+                <div>
+                    <div class="text-[10px] text-gray-400">Sana</div>
+                    <div class="text-xs font-bold text-white" id="modalCurrentDateDisplay">11/09/2026</div>
+                </div>
+            </div>
+            <div class="bg-[#17132a] border border-[#262145] rounded-xl p-3 flex items-center space-x-3">
+                <i class="fa-regular fa-clock text-purple-400"></i>
+                <div>
+                    <div class="text-[10px] text-gray-400">Vaqt</div>
+                    <input type="time" id="questTimeInput" value="21:00" class="bg-transparent text-xs font-bold text-white outline-none">
+                </div>
+            </div>
+        </div>
+
+        <div class="space-y-1">
+            <label class="text-[10px] text-gray-400 font-bold uppercase">Turi (Type)</label>
+            <div class="grid grid-cols-3 gap-2" id="questTypeSelector">
+                <button type="button" onclick="selectQuestType('Routine')" class="type-btn p-2.5 rounded-xl border border-purple-500 bg-purple-600/20 text-white text-xs font-bold text-center">Kunlik Odat</button>
+                <button type="button" onclick="selectQuestType('Negative')" class="type-btn p-2.5 rounded-xl border border-[#262145] bg-[#17132a] text-gray-400 text-xs font-bold text-center">Salbiy Odat</button>
+                <button type="button" onclick="selectQuestType('Task')" class="type-btn p-2.5 rounded-xl border border-[#262145] bg-[#17132a] text-gray-400 text-xs font-bold text-center">Vazifa</button>
+            </div>
+        </div>
+
+        <div class="space-y-1">
+            <label class="text-[10px] text-gray-400 font-bold uppercase">Kategoriya</label>
+            <div class="grid grid-cols-3 gap-2" id="questCatSelector">
+                <button type="button" onclick="selectQuestCategory('General')" class="cat-btn p-2.5 rounded-xl border border-yellow-500 bg-yellow-500/20 text-yellow-300 text-xs font-bold text-center flex flex-col items-center space-y-1"><i class="fa-solid fa-star"></i><span>Umumiy</span></button>
+                <button type="button" onclick="selectQuestCategory('Health')" class="cat-btn p-2.5 rounded-xl border border-[#262145] bg-[#17132a] text-gray-400 text-xs font-bold text-center flex flex-col items-center space-y-1"><i class="fa-solid fa-heart"></i><span>Salomatlik</span></button>
+                <button type="button" onclick="selectQuestCategory('Experience')" class="cat-btn p-2.5 rounded-xl border border-[#262145] bg-[#17132a] text-gray-400 text-xs font-bold text-center flex flex-col items-center space-y-1"><i class="fa-solid fa-graduation-cap"></i><span>Tajriba</span></button>
+                <button type="button" onclick="selectQuestCategory('Learning')" class="cat-btn p-2.5 rounded-xl border border-[#262145] bg-[#17132a] text-gray-400 text-xs font-bold text-center flex flex-col items-center space-y-1"><i class="fa-solid fa-book"></i><span>O'rganish</span></button>
+                <button type="button" onclick="selectQuestCategory('Financial')" class="cat-btn p-2.5 rounded-xl border border-[#262145] bg-[#17132a] text-gray-400 text-xs font-bold text-center flex flex-col items-center space-y-1"><i class="fa-solid fa-wallet"></i><span>Moliya</span></button>
+                <button type="button" onclick="selectQuestCategory('Productivity')" class="cat-btn p-2.5 rounded-xl border border-[#262145] bg-[#17132a] text-gray-400 text-xs font-bold text-center flex flex-col items-center space-y-1"><i class="fa-solid fa-chart-line"></i><span>Mahsuldorlik</span></button>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-2 gap-3">
+            <div class="glass-card rounded-2xl p-3 space-y-2">
+                <div class="text-[10px] text-gray-400 flex items-center space-x-1"><i class="fa-solid fa-star text-yellow-400"></i><span>Bajarilgan uchun ball</span></div>
+                <div class="flex items-center justify-between">
+                    <button onclick="adjustModalPoints(-1)" class="w-7 h-7 rounded-lg bg-[#1b1730] text-white font-bold">-</button>
+                    <span id="modalPointsVal" class="font-extrabold text-sm text-yellow-400">5</span>
+                    <button onclick="adjustModalPoints(1)" class="w-7 h-7 rounded-lg bg-[#1b1730] text-white font-bold">+</button>
+                </div>
+            </div>
+            <div class="glass-card rounded-2xl p-3 space-y-2">
+                <div class="text-[10px] text-gray-400 flex items-center space-x-1"><i class="fa-solid fa-flag text-blue-400"></i><span>Kunlik maqsad</span></div>
+                <div class="flex items-center justify-between">
+                    <button onclick="adjustModalTarget(-1)" class="w-7 h-7 rounded-lg bg-[#1b1730] text-white font-bold">-</button>
+                    <span id="modalTargetVal" class="font-extrabold text-sm text-white">1</span>
+                    <button onclick="adjustModalTarget(1)" class="w-7 h-7 rounded-lg bg-[#1b1730] text-white font-bold">+</button>
+                </div>
+            </div>
+        </div>
+
+        <button onclick="createNewQuest()" class="w-full py-3 bg-gradient-to-r from-purple-600 to-pink-500 text-white font-bold text-xs rounded-xl shadow-lg hover:opacity-95 transition-all">
+            + Kvestni Qo'shish
+        </button>
+    </div>
+</div>
+
+<!-- CALENDAR MODAL -->
+<div id="calendarModal" class="fixed inset-0 z-50 glass-modal hidden flex items-center justify-center p-4">
+    <div class="glass-card rounded-3xl p-5 w-full max-w-sm space-y-4 border border-purple-500/30">
+        <div class="text-xs text-gray-400 font-semibold">Sanani tanlang</div>
+        <div class="flex justify-between items-center">
+            <div class="text-lg font-extrabold text-white" id="modalSelectedDateText">Jum, Sen 11</div>
+            <i class="fa-solid fa-pen text-purple-400 text-xs"></i>
+        </div>
+        <div class="flex justify-between items-center text-xs text-purple-300 font-bold pt-2">
+            <span id="modalMonthYearText">Sentyabr 2026</span>
+            <div class="flex space-x-3 text-gray-400"><i class="fa-solid fa-chevron-left cursor-pointer" onclick="changeCalendarMonth(-1)"></i><i class="fa-solid fa-chevron-right cursor-pointer" onclick="changeCalendarMonth(1)"></i></div>
+        </div>
+        <div class="grid grid-cols-7 gap-1 text-center text-[10px] text-gray-500 font-bold">
+            <span>Du</span><span>Se</span><span>Ch</span><span>Pa</span><span>Ju</span><span>Sh</span><span>Ya</span>
+        </div>
+        <div class="grid grid-cols-7 gap-1 text-center text-xs" id="popupCalendarGrid"></div>
+        <div class="flex justify-end space-x-4 pt-2 text-xs font-bold">
+            <button onclick="closeCalendarModal()" class="text-purple-400">Bekor qilish</button>
+            <button onclick="closeCalendarModal()" class="text-purple-400">OK</button>
+        </div>
+    </div>
+</div>
+
+<!-- BOTTOM NAVIGATION BAR -->
+<nav class="fixed bottom-0 left-0 right-0 z-40 glass-card border-t border-[#201b38] px-2 py-2">
+    <div class="max-w-md mx-auto flex justify-around items-center">
+        <button onclick="switchPage('daily')" class="nav-btn flex flex-col items-center space-y-1 text-purple-500" data-page="daily">
+            <i class="fa-regular fa-calendar text-base"></i>
+            <span class="text-[10px] font-semibold">Kunlik</span>
+        </button>
+        <button onclick="switchPage('mood')" class="nav-btn flex flex-col items-center space-y-1 text-gray-400 hover:text-white" data-page="mood">
+            <i class="fa-regular fa-face-smile text-base"></i>
+            <span class="text-[10px] font-semibold">Kayfiyat</span>
+        </button>
+        <button onclick="switchPage('journeys')" class="nav-btn flex flex-col items-center space-y-1 text-gray-400 hover:text-white" data-page="journeys">
+            <i class="fa-regular fa-compass text-base"></i>
+            <span class="text-[10px] font-semibold">Sayohatlar</span>
+        </button>
+        <button onclick="switchPage('stats')" class="nav-btn flex flex-col items-center space-y-1 text-gray-400 hover:text-white" data-page="stats">
+            <i class="fa-solid fa-chart-column text-base"></i>
+            <span class="text-[10px] font-semibold">Statistika</span>
+        </button>
+        <button onclick="switchPage('profile')" class="nav-btn flex flex-col items-center space-y-1 text-gray-400 hover:text-white" data-page="profile">
+            <i class="fa-regular fa-user text-base"></i>
+            <span class="text-[10px] font-semibold">Profil</span>
+        </button>
+    </div>
+</nav>
+
+<!-- FULLY WORKING DYNAMIC APP LOGIC WITH WORKING SKILL RADAR -->
+<script>
+    const monthsUz = ['Yanvar', 'Fevral', 'Mart', 'Aprel', 'May', 'Iyun', 'Iyul', 'Avgust', 'Sentyabr', 'Oktyabr', 'Noyabr', 'Dekabr'];
+    const monthsShortUz = ['Yan', 'Fev', 'Mar', 'Apr', 'May', 'Iyun', 'Iyul', 'Avg', 'Sen', 'Okt', 'Noy', 'Dek'];
+    const daysShortUz = ['Yak', 'Du', 'Se', 'Ch', 'Pa', 'Ju', 'Sh'];
+
+    let appState = {
+        level: 1,
+        xp: 0,
+        maxXp: 35,
+        totalPoints: 0,
+        profileName: 'ROSKHALIYEV',
+        dailyNotes: '-',
+        healthPct: 0,
+        lastDateString: '',
+        quests: [],
+        historyLog: {},
+        moods: [],
+        activeFilter: 'all',
+        sortBy: 'default'
+    };
+
+    function getTodayString() {
+        const now = new Date();
+        const y = now.getFullYear();
+        const m = String(now.getMonth() + 1).padStart(2, '0');
+        const d = String(now.getDate()).padStart(2, '0');
+        return `${y}-${m}-${d}`;
+    }
+
+    function getTodayDayShortName() {
+        const now = new Date();
+        const jsDay = now.getDay();
+        const map = ['Yak', 'Du', 'Se', 'Ch', 'Pa', 'Ju', 'Sh'];
+        return map[jsDay];
+    }
+
+    function loadData() {
+        const saved = localStorage.getItem('questify_realtime_v3');
+        if (saved) {
+            try { appState = JSON.parse(saved); } catch(e) {}
+        }
+        checkAndResetForNewDay();
+    }
+
+    function checkAndResetForNewDay() {
+        const realToday = getTodayString();
+        
+        if (!appState.lastDateString) {
+            appState.lastDateString = realToday;
+        } else if (appState.lastDateString !== realToday) {
+            const oldDate = appState.lastDateString;
+            
+            if (!appState.historyLog[oldDate]) {
+                appState.historyLog[oldDate] = [];
+            }
+
+            appState.quests.forEach(q => {
+                if (q.completed) {
+                    appState.historyLog[oldDate].push({
+                        id: q.id,
+                        title: q.title,
+                        category: q.category,
+                        points: q.points,
+                        completed: true
+                    });
+                }
+                q.current = 0;
+                q.completed = false;
+            });
+
+            appState.lastDateString = realToday;
+            saveData();
+        }
+    }
+
+    function saveData() {
+        localStorage.setItem('questify_realtime_v3', JSON.stringify(appState));
+    }
+
+    let deferredInstallPrompt = null;
+    window.addEventListener("beforeinstallprompt", (e) => {
+        e.preventDefault();
+        deferredInstallPrompt = e;
+        const btn = document.getElementById("installAppBtn");
+        if(btn) btn.classList.remove("hidden");
+    });
+
+    const installAppBtn = document.getElementById("installAppBtn");
+    if(installAppBtn){
+        installAppBtn.addEventListener("click", async () => {
+            if(!deferredInstallPrompt) return;
+            deferredInstallPrompt.prompt();
+            await deferredInstallPrompt.userChoice;
+            deferredInstallPrompt = null;
+            installAppBtn.classList.add("hidden");
+        });
+    }
+    window.addEventListener("appinstalled", () => {
+        const btn = document.getElementById("installAppBtn");
+        if(btn) btn.classList.add("hidden");
+    });
+
+    window.onload = function() {
+        loadData();
+        renderAll();
+        switchStatsTab('progress');
+
+        setInterval(() => {
+            const currentRealDay = getTodayString();
+            if (appState.lastDateString !== currentRealDay) {
+                checkAndResetForNewDay();
+                renderAll();
+            }
+        }, 30000);
+
+        if ('serviceWorker' in navigator) {
+            const swSource = `
+              const CACHE_NAME = "questify-cache-v1";
+              self.addEventListener("install", (e) => { self.skipWaiting(); });
+              self.addEventListener("activate", (e) => { e.waitUntil(self.clients.claim()); });
+              self.addEventListener("fetch", (e) => {
+                if(e.request.method !== "GET") return;
+                e.respondWith(
+                  caches.open(CACHE_NAME).then((cache) =>
+                    fetch(e.request).then((networkRes) => {
+                      try{ cache.put(e.request, networkRes.clone()); }catch(err){}
+                      return networkRes;
+                    }).catch(() => cache.match(e.request).then((cached) => cached || Promise.reject("offline")))
+                  )
+                );
+              });
+            `;
+            try {
+                const blob = new Blob([swSource], { type: "application/javascript" });
+                const swUrl = URL.createObjectURL(blob);
+                navigator.serviceWorker.register(swUrl).catch(() => {});
+            } catch(e) {}
+        }
+    };
+
+    function renderAll() {
+        renderHeader();
+        renderDynamicDates();
+        renderQuests();
+        renderStats();
+        renderProfile();
+        renderMoods();
+        renderSkillRadar();
+        renderAIAnalytics();
+    }
+
+    function renderDynamicDates() {
+        const now = new Date();
+        const dayName = daysShortUz[now.getDay()];
+        const monthName = monthsShortUz[now.getMonth()];
+        const dateNum = now.getDate();
+        const yearNum = now.getFullYear();
+
+        const modalDateDisp = document.getElementById('modalCurrentDateDisplay');
+        if(modalDateDisp) {
+            modalDateDisp.innerText = `${String(dateNum).padStart(2,'0')}/${String(now.getMonth()+1).padStart(2,'0')}/${yearNum}`;
+        }
+
+        const modalSelected = document.getElementById('modalSelectedDateText');
+        if(modalSelected) {
+            modalSelected.innerText = `${dayName}, ${monthName} ${dateNum}`;
+        }
+
+        const monthYearText = document.getElementById('modalMonthYearText');
+        if(monthYearText) {
+            monthYearText.innerText = `${monthsUz[now.getMonth()]} ${yearNum}`;
+        }
+
+        const statsMonthlyLabel = document.getElementById('statsMonthlyLabel');
+        if(statsMonthlyLabel) {
+            statsMonthlyLabel.innerText = `${monthsUz[now.getMonth()]} ${yearNum}`;
+        }
+    }
+
+    function renderHeader() {
+        const levelNum = document.getElementById('headerLevelNum');
+        const xpText = document.getElementById('headerXpText');
+        const totalPts = document.getElementById('headerTotalPoints');
+        const xpBar = document.getElementById('headerXpBar');
+
+        if(levelNum) levelNum.innerText = appState.level;
+        if(xpText) xpText.innerText = `${appState.xp}/${appState.maxXp} XP`;
+        if(totalPts) totalPts.innerText = `Jami Ballar: ${appState.totalPoints} Ball`;
+        if(xpBar) {
+            const xpPercent = Math.min(100, (appState.xp / appState.maxXp) * 100);
+            xpBar.style.width = xpPercent + '%';
+        }
+    }
+
+    function switchPage(pageId) {
+        ['daily', 'mood', 'journeys', 'stats', 'profile'].forEach(id => {
+            const el = document.getElementById('page-' + id);
+            if (el) el.classList.add('hidden');
+        });
+        const targetEl = document.getElementById('page-' + pageId);
+        if (targetEl) targetEl.classList.remove('hidden');
+
+        document.querySelectorAll('.nav-btn').forEach(btn => {
+            btn.classList.remove('text-purple-500');
+            btn.classList.add('text-gray-400');
+            if(btn.getAttribute('data-page') === pageId) {
+                btn.classList.remove('text-gray-400');
+                btn.classList.add('text-purple-500');
+            }
+        });
+        if(pageId === 'profile') {
+            setTimeout(renderSkillRadar, 50);
+        }
+    }
+
+    function filterQuests(filter) {
+        appState.activeFilter = filter;
+        document.querySelectorAll('.quest-tab').forEach(btn => {
+            btn.className = "quest-tab pb-2 text-gray-400 hover:text-white whitespace-nowrap";
+            if(btn.getAttribute('data-tab') === filter) {
+                btn.className = "quest-tab pb-2 text-white border-b-2 border-purple-500 whitespace-nowrap";
+            }
+        });
+        renderQuests();
+    }
+
+    function toggleSortMenu() {
+        const menu = document.getElementById('sortMenu');
+        if(menu) menu.classList.toggle('hidden');
+    }
+
+    function sortQuests(criterion) {
+        appState.sortBy = criterion;
+        toggleSortMenu();
+        renderQuests();
+    }
+
+    function isQuestScheduledForToday(q) {
+        const todayDay = getTodayDayShortName();
+        if (!q.repeatMode || q.repeatMode === 'every_day') {
+            return true;
+        }
+        if (q.repeatMode === 'specific_days') {
+            return q.selectedDays && q.selectedDays.includes(todayDay);
+        }
+        if (q.repeatMode === 'one_time') {
+            return q.targetDate === getTodayString() || !q.targetDate;
+        }
+        if (q.repeatMode === 'every_other_day') {
+            return true;
+        }
+        return true;
+    }
+
+    function renderQuests() {
+        const activeList = document.getElementById('activeQuestsList');
+        const completedList = document.getElementById('completedQuestsList');
+        const otherList = document.getElementById('otherQuestsList');
+        const otherCountBadge = document.getElementById('otherQuestsCountBadge');
+        const activeHeaderLabel = document.getElementById('activeQuestsHeaderLabel');
+
+        if(!activeList || !completedList || !otherList) return;
+        activeList.innerHTML = '';
+        completedList.innerHTML = '';
+        otherList.innerHTML = '';
+
+        const todayQuests = appState.quests.filter(q => isQuestScheduledForToday(q));
+        const otherQuests = appState.quests.filter(q => !isQuestScheduledForToday(q));
+
+        if(otherCountBadge) otherCountBadge.innerText = otherQuests.length;
+
+        if(activeHeaderLabel) {
+            activeHeaderLabel.innerText = `Bugungi Faol Kvestlar (${todayQuests.filter(x => !x.completed).length})`;
+        }
+
+        let filtered = todayQuests.filter(q => {
+            if(appState.activeFilter === 'all') return true;
+            return q.type === appState.activeFilter;
+        });
+
+        if(appState.sortBy === 'name') filtered.sort((a,b) => a.title.localeCompare(b.title));
+        else if(appState.sortBy === 'time') filtered.sort((a,b) => a.time.localeCompare(b.time));
+        else if(appState.sortBy === 'points') filtered.sort((a,b) => b.points - a.points);
+
+        let activeCount = 0;
+        let completedCount = 0;
+
+        filtered.forEach(q => {
+            const iconClass = q.category === 'Health' ? 'fa-heart text-red-400' :
+                              q.category === 'Experience' ? 'fa-graduation-cap text-purple-400' :
+                              q.category === 'Learning' ? 'fa-book text-cyan-400' : 'fa-star text-yellow-400';
+
+            let repeatText = 'Har kuni';
+            if(q.repeatMode === 'specific_days') repeatText = q.selectedDays ? q.selectedDays.join(', ') : 'Maxsus kunlar';
+            else if(q.repeatMode === 'one_time') repeatText = 'Bir martalik';
+            else if(q.repeatMode === 'every_other_day') repeatText = 'Kunora';
+
+            const html = `
+                <div class="glass-card rounded-2xl p-4 space-y-3 border border-[#201b38] transition-all">
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center space-x-3">
+                            <div class="w-9 h-9 rounded-xl bg-[#1b1730] flex items-center justify-center">
+                                <i class="fa-solid ${iconClass} text-xs"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-extrabold text-sm text-white">${q.title}</h3>
+                                <div class="flex items-center space-x-2 mt-1.5">
+                                    <span class="text-[10px] bg-yellow-500/10 text-yellow-400 px-2 py-0.5 rounded-md font-semibold border border-yellow-500/20"><i class="fa-solid fa-star mr-1"></i>O'rta</span>
+                                    <span class="text-[10px] bg-[#1b1730] text-purple-300 px-2 py-0.5 rounded-md font-semibold border border-[#262145]">${repeatText}</span>
+                                    <span class="text-[10px] bg-[#1b1730] text-gray-300 px-2 py-0.5 rounded-md font-semibold border border-[#262145]">${q.category}</span>
+                                </div>
+                            </div>
+                        </div>
+                        <button onclick="deleteQuest(${q.id})" class="text-gray-500 hover:text-red-400 p-1" title="O'chirish"><i class="fa-solid fa-trash text-xs"></i></button>
+                    </div>
+                    <div class="flex items-center justify-between pt-2 border-t border-[#201b38]">
+                        <div class="flex items-center space-x-3 text-xs text-gray-400">
+                            <span class="flex items-center space-x-1 text-purple-400 bg-purple-950/60 px-2.5 py-1 rounded-lg border border-purple-900/30"><i class="fa-regular fa-clock"></i><span>${q.time}</span></span>
+                            <span class="flex items-center space-x-1 text-red-400 bg-red-950/40 px-2.5 py-1 rounded-lg border border-red-900/30"><i class="fa-solid fa-bolt text-[10px]"></i><span>-${q.points} ball</span></span>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <button onclick="decrementProgress(${q.id})" class="w-7 h-7 rounded-lg bg-[#1b1730] border border-[#262145] text-gray-300 flex items-center justify-center font-bold text-xs">-</button>
+                            <span class="font-bold text-sm text-white">${q.current}/${q.target}</span>
+                            <button onclick="incrementProgress(${q.id})" class="w-7 h-7 rounded-lg bg-gradient-to-r from-purple-600 to-pink-500 text-white flex items-center justify-center font-bold text-xs shadow-md hover:opacity-90">+</button>
+                        </div>
+                    </div>
+                </div>
+            `;
+
+            if(q.completed) {
+                completedCount++;
+                completedList.innerHTML += html;
+            } else {
+                activeCount++;
+                activeList.innerHTML += html;
+            }
+        });
+
+        // Boshqa kungi kvestlarni render qilish
+        if(otherQuests.length === 0) {
+            otherList.innerHTML = `<div class="text-center py-2 text-[11px] text-gray-600">Boshqa kunlarga kvestlar yo'q</div>`;
+        } else {
+            otherQuests.forEach(q => {
+                let repeatText = q.repeatMode === 'specific_days' ? (q.selectedDays ? q.selectedDays.join(', ') : 'Maxsus') : 'Boshqa';
+                otherList.innerHTML += `
+                    <div class="glass-card rounded-2xl p-3 space-y-2 border border-[#201b38] opacity-75">
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center space-x-2.5">
+                                <div class="w-7 h-7 rounded-lg bg-[#1b1730] flex items-center justify-center">
+                                    <i class="fa-solid fa-calendar-day text-purple-400 text-xs"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-xs text-white">${q.title}</h4>
+                                    <span class="text-[9px] text-purple-300 bg-purple-950 px-2 py-0.5 rounded">Kunlar: ${repeatText}</span>
+                                </div>
+                            </div>
+                            <button onclick="deleteQuest(${q.id})" class="text-gray-500 hover:text-red-400 p-1"><i class="fa-solid fa-trash text-xs"></i></button>
+                        </div>
+                    </div>
+                `;
+            });
+        }
+
+        if(activeCount === 0) activeList.innerHTML = `<div class="text-center py-4 text-xs text-gray-500">Bugunga rejalashtirilgan faol kvestlar yo'q</div>`;
+        if(completedCount === 0) completedList.innerHTML = `<div class="text-center py-2 text-[11px] text-gray-600">Bugun bajarilgan kvestlar yo'q</div>`;
+        
+        renderAIAnalytics();
+    }
+
+    function incrementProgress(id) {
+        const q = appState.quests.find(x => x.id === id);
+        if(q && !q.completed) {
+            q.current++;
+            if(q.current >= q.target) {
+                q.completed = true;
+                appState.totalPoints += q.points;
+                appState.xp += 10;
+                if(appState.xp >= appState.maxXp) {
+                    appState.level++;
+                    appState.xp = 0;
+                    appState.maxXp += 15;
+                }
+                
+                const todayStr = getTodayString();
+                if(!appState.historyLog[todayStr]) appState.historyLog[todayStr] = [];
+                if(!appState.historyLog[todayStr].some(item => item.id === q.id)) {
+                    appState.historyLog[todayStr].push({
+                        id: q.id,
+                        title: q.title,
+                        category: q.category,
+                        points: q.points,
+                        completed: true
+                    });
+                }
+            }
+            saveData();
+            renderAll();
+        }
+    }
+
+    function decrementProgress(id) {
+        const q = appState.quests.find(x => x.id === id);
+        if(q && q.current > 0) {
+            if(q.completed) {
+                q.completed = false;
+                appState.totalPoints -= q.points;
+                appState.xp = Math.max(0, appState.xp - 10);
+
+                const todayStr = getTodayString();
+                if(appState.historyLog[todayStr]) {
+                    appState.historyLog[todayStr] = appState.historyLog[todayStr].filter(item => item.id !== q.id);
+                }
+            }
+            q.current--;
+            saveData();
+            renderAll();
+        }
+    }
+
+    function deleteQuest(id) {
+        appState.quests = appState.quests.filter(x => x.id !== id);
+        saveData();
+        renderAll();
+    }
+
+    let newQuestType = 'Routine';
+    let newQuestCategory = 'General';
+    let newQuestPoints = 5;
+    let newQuestTarget = 1;
+    let newRepeatMode = 'every_day';
+    let selectedDaysList = [];
+
+    function selectRepeatMode(mode) {
+        newRepeatMode = mode;
+        ['every_day', 'specific_days', 'one_time', 'every_other_day'].forEach(m => {
+            const btn = document.getElementById('rep-' + m);
+            if(btn) {
+                if(m === mode) {
+                    btn.className = "repeat-btn p-3 rounded-2xl border border-purple-500 bg-purple-600/20 text-white text-xs font-semibold flex items-center space-x-2.5 transition-all";
+                } else {
+                    btn.className = "repeat-btn p-3 rounded-2xl border border-[#262145] bg-[#17132a] text-gray-400 text-xs font-semibold flex items-center space-x-2.5 hover:text-white transition-all";
+                }
+            }
+        });
+
+        const specContainer = document.getElementById('specificDaysContainer');
+        if(specContainer) {
+            if(mode === 'specific_days') {
+                specContainer.classList.remove('hidden');
+            } else {
+                specContainer.classList.add('hidden');
+            }
+        }
+    }
+
+    function toggleDay(day) {
+        const idx = selectedDaysList.indexOf(day);
+        if(idx > -1) {
+            selectedDaysList.splice(idx, 1);
+        } else {
+            selectedDaysList.push(day);
+        }
+
+        document.querySelectorAll('.day-btn').forEach(btn => {
+            const d = btn.getAttribute('data-day');
+            if(selectedDaysList.includes(d)) {
+                btn.className = "day-btn w-9 h-9 rounded-full border border-purple-500 bg-purple-600 text-white text-xs font-bold transition-all";
+            } else {
+                btn.className = "day-btn w-9 h-9 rounded-full border border-[#262145] bg-[#17132a] text-gray-400 text-xs font-bold transition-all";
+            }
+        });
+    }
+
+    function openAddQuestModal() {
+        const modal = document.getElementById('addQuestModal');
+        if(modal) modal.classList.remove('hidden');
+    }
+    function closeAddQuestModal() {
+        const modal = document.getElementById('addQuestModal');
+        if(modal) modal.classList.add('hidden');
+    }
+
+    function selectQuestType(type) {
+        newQuestType = type;
+        document.querySelectorAll('.type-btn').forEach(btn => {
+            btn.className = "type-btn p-2.5 rounded-xl border border-[#262145] bg-[#17132a] text-gray-400 text-xs font-bold text-center";
+            if(btn.innerText.includes(type === 'Routine' ? 'Kunlik Odat' : type === 'Negative' ? 'Salbiy Odat' : 'Vazifa')) {
+                btn.className = "type-btn p-2.5 rounded-xl border border-purple-500 bg-purple-600/20 text-white text-xs font-bold text-center";
+            }
+        });
+    }
+
+    function selectQuestCategory(cat) {
+        newQuestCategory = cat;
+        document.querySelectorAll('.cat-btn').forEach(btn => {
+            btn.className = "cat-btn p-2.5 rounded-xl border border-[#262145] bg-[#17132a] text-gray-400 text-xs font-bold text-center flex flex-col items-center space-y-1";
+            if(btn.innerText.includes(cat === 'General' ? 'Umumiy' : cat === 'Health' ? 'Salomatlik' : cat === 'Experience' ? 'Tajriba' : cat === 'Learning' ? 'O\'rganish' : cat === 'Financial' ? 'Moliya' : 'Mahsuldorlik')) {
+                btn.className = "cat-btn p-2.5 rounded-xl border border-yellow-500 bg-yellow-500/20 text-yellow-300 text-xs font-bold text-center flex flex-col items-center space-y-1";
+            }
+        });
+    }
+
+    function adjustModalPoints(val) {
+        newQuestPoints = Math.max(1, newQuestPoints + val);
+        const el = document.getElementById('modalPointsVal');
+        if(el) el.innerText = newQuestPoints;
+    }
+    function adjustModalTarget(val) {
+        newQuestTarget = Math.max(1, newQuestTarget + val);
+        const el = document.getElementById('modalTargetVal');
+        if(el) el.innerText = newQuestTarget;
+    }
+
+    function createNewQuest() {
+        const titleInput = document.getElementById('questTitleInput');
+        const timeInput = document.getElementById('questTimeInput');
+        const title = titleInput ? titleInput.value.trim() : '';
+        const time = timeInput && timeInput.value ? timeInput.value : '21:00';
+        
+        if(!title) { alert('Iltimos, kvest nomini kiriting!'); return; }
+        if(newRepeatMode === 'specific_days' && selectedDaysList.length === 0) {
+            alert('Iltimos, kvest chiqadigan kunlarni tanlang!');
+            return;
+        }
+
+        appState.quests.push({
+            id: Date.now(),
+            title: title,
+            type: newQuestType,
+            category: newQuestCategory,
+            repeatMode: newRepeatMode,
+            selectedDays: [...selectedDaysList],
+            targetDate: getTodayString(),
+            time: time,
+            points: newQuestPoints,
+            target: newQuestTarget,
+            current: 0,
+            completed: false
+        });
+
+        saveData();
+        closeAddQuestModal();
+        if(titleInput) titleInput.value = '';
+        selectedDaysList = [];
+        selectRepeatMode('every_day');
+        renderAll();
+    }
+
+    function openCalendarModal() {
+        const modal = document.getElementById('calendarModal');
+        if(modal) modal.classList.remove('hidden');
+        renderPopupCalendar();
+    }
+    function closeCalendarModal() {
+        const modal = document.getElementById('calendarModal');
+        if(modal) modal.classList.add('hidden');
+    }
+
+    let calendarMonth = new Date().getMonth();
+    let calendarYear = new Date().getFullYear();
+
+    function renderPopupCalendar() {
+        const mText = document.getElementById('modalMonthYearText');
+        if(mText) mText.innerText = `${monthsUz[calendarMonth]} ${calendarYear}`;
+        const grid = document.getElementById('popupCalendarGrid');
+        if(!grid) return;
+        grid.innerHTML = '';
+        
+        const now = new Date();
+        const currentDay = now.getDate();
+        const currentMonth = now.getMonth();
+        const currentYear = now.getFullYear();
+        const daysInMonth = new Date(calendarYear, calendarMonth + 1, 0).getDate();
+
+        for(let i=1; i<=daysInMonth; i++) {
+            const isCurrent = (i === currentDay && calendarMonth === currentMonth && calendarYear === currentYear);
+            grid.innerHTML += `<div onclick="selectCalendarDate(${i})" class="py-1.5 rounded-lg cursor-pointer ${isCurrent ? 'bg-purple-600 text-white font-bold' : 'text-gray-300 hover:bg-[#1b1730]'}">${i}</div>`;
+        }
+    }
+    function changeCalendarMonth(dir) {
+        calendarMonth += dir;
+        if(calendarMonth > 11) { calendarMonth = 0; calendarYear++; }
+        if(calendarMonth < 0) { calendarMonth = 11; calendarYear--; }
+        renderPopupCalendar();
+    }
+    function selectCalendarDate(day) {
+        const dateText = document.getElementById('modalSelectedDateText');
+        if(dateText) dateText.innerText = `${monthsShortUz[calendarMonth]} ${day}, ${calendarYear}`;
+        closeCalendarModal();
+    }
+
+    function editProfileName() {
+        const newName = prompt('Yangi profil nomini kiriting:', appState.profileName);
+        if(newName && newName.trim() !== '') {
+            appState.profileName = newName.trim().toUpperCase();
+            saveData();
+            renderProfile();
+        }
+    }
+
+    function editDailyNotes() {
+        const note = prompt('Kunlik eslatma kiriting:', appState.dailyNotes);
+        if(note !== null) {
+            appState.dailyNotes = note.trim() === '' ? '-' : note.trim();
+            saveData();
+            renderProfile();
+        }
+    }
+
+    function changeHealthPercent(val) {
+        appState.healthPct = Math.max(0, Math.min(100, appState.healthPct + val));
+        saveData();
+        renderProfile();
+    }
+
+    let profileCalMonth = new Date().getMonth();
+    function changeProfileCalendarMonth(dir) {
+        profileCalMonth += dir;
+        if(profileCalMonth > 11) profileCalMonth = 0;
+        if(profileCalMonth < 0) profileCalMonth = 11;
+        const label = document.getElementById('profileCalMonthLabel');
+        if(label) label.innerText = `${monthsUz[profileCalMonth]} ${new Date().getFullYear()}`;
+        renderProfile();
+    }
+
+    function saveMood(mood, emoji) {
+        const now = new Date();
+        const dateStr = `${now.getDate()} ${monthsShortUz[now.getMonth()]}, ${now.getFullYear()} • ${['Yakshanba','Dushanba','Seshanba','Chorshanba','Payshanba','Juma','Shanba'][now.getDay()]} (Bugun)`;
+        appState.moods.unshift({ date: dateStr, mood: mood, emoji: emoji });
+        saveData();
+        renderMoods();
+        renderProfile();
+        alert(`Kayfiyatingiz saqlandi: ${mood} ${emoji}`);
+    }
+
+    function switchStatsTab(tab) {
+        ['weekly', 'monthly', 'progress'].forEach(t => {
+            const sEl = document.getElementById('stats' + t.charAt(0).toUpperCase() + t.slice(1));
+            const tEl = document.getElementById('statsTab' + t.charAt(0).toUpperCase() + t.slice(1));
+            if(sEl) sEl.classList.add('hidden');
+            if(tEl) tEl.className = "flex-1 py-1.5 rounded-lg text-xs font-semibold text-gray-400";
+        });
+        const activeS = document.getElementById('stats' + tab.charAt(0).toUpperCase() + tab.slice(1));
+        const activeT = document.getElementById('statsTab' + tab.charAt(0).toUpperCase() + tab.slice(1));
+        if(activeS) activeS.classList.remove('hidden');
+        if(activeT) activeT.className = "flex-1 py-1.5 rounded-lg text-xs font-semibold bg-purple-600 text-white";
+    }
+
+    let currentWeekOffset = 0;
+    function changeWeek(dir) {
+        currentWeekOffset += dir;
+        const wLabel = document.getElementById('weeklyRangeLabel');
+        if(wLabel) {
+            const now = new Date();
+            now.setDate(now.getDate() + (currentWeekOffset * 7));
+            wLabel.innerText = `${now.getDate()}/${now.getMonth()+1} hafta`;
+        }
+    }
+
+    function filterProgress(type) {
+        document.querySelectorAll('.prog-filter').forEach(btn => {
+            btn.className = "prog-filter bg-[#1c1733] border border-[#2b2348] text-gray-400 px-4 py-1.5 rounded-xl font-semibold";
+            if(btn.getAttribute('data-filter') === type) {
+                btn.className = "prog-filter bg-cyan-500 text-black px-4 py-1.5 rounded-xl font-bold flex items-center space-x-1.5 shadow-md";
+                btn.innerHTML = `<i class="fa-solid fa-check text-xs"></i><span>${btn.innerText.replace('✓','').trim()}</span>`;
+            } else {
+                btn.innerHTML = btn.innerText.replace('✓','').trim();
+            }
+        });
+    }
+
+    function renderStats() {
+        const wList = document.getElementById('statsWeeklyList');
+        if(wList) {
+            wList.innerHTML = '';
+            const todayQuests = appState.quests.filter(q => isQuestScheduledForToday(q));
+            if(todayQuests.length === 0) {
+                wList.innerHTML = `<div class="text-center text-xs text-gray-500 py-4">Bugungi kvestlar mavjud emas</div>`;
+            } else {
+                todayQuests.forEach(q => {
+                    wList.innerHTML += `
+                        <div class="glass-card rounded-2xl p-3 space-y-2 border border-purple-500/20">
+                            <div class="flex justify-between items-center text-xs"><span class="font-bold text-white">${q.title}</span><span class="text-yellow-400">${q.points} ball</span></div>
+                            <div class="grid grid-cols-7 gap-1 text-center">
+                                <div class="h-6 rounded bg-[#17132a]"></div><div class="h-6 rounded bg-[#17132a]"></div><div class="h-6 rounded bg-[#17132a]"></div><div class="h-6 rounded bg-[#17132a]"></div>
+                                <div class="h-6 rounded ${q.completed ? 'bg-purple-600 text-white flex items-center justify-center text-[10px]' : 'bg-[#17132a]'}">${q.completed ? '<i class="fa-solid fa-check"></i>' : ''}</div>
+                                <div class="h-6 rounded bg-[#17132a]"></div><div class="h-6 rounded bg-[#17132a]"></div>
+                            </div>
+                        </div>
+                    `;
+                });
+            }
+        }
+
+        const mGrid = document.getElementById('monthlyCalendarGrid');
+        if(mGrid) {
+            mGrid.innerHTML = '';
+            const now = new Date();
+            const daysInMonth = new Date(now.getFullYear(), now.getMonth() + 1, 0).getDate();
+            const currentDay = now.getDate();
+
+            for(let i=1; i<=daysInMonth; i++) {
+                let bg = 'bg-[#17132a] text-gray-300';
+                const y = now.getFullYear();
+                const m = String(now.getMonth() + 1).padStart(2, '0');
+                const d = String(i).padStart(2, '0');
+                const dateKey = `${y}-${m}-${d}`;
+
+                if (appState.historyLog[dateKey] && appState.historyLog[dateKey].length > 0) {
+                    bg = 'bg-purple-600 text-white font-bold rounded-lg';
+                }
+                if(i === currentDay) {
+                    bg = 'bg-red-500 text-white font-bold rounded-lg';
+                }
+                mGrid.innerHTML += `<div class="py-2 rounded-lg text-xs ${bg}">${i}</div>`;
+            }
+        }
+
+        const pGrid = document.getElementById('progressCirclesGrid');
+        if(pGrid) {
+            pGrid.innerHTML = '';
+            const cats = [
+                { name: 'Salomatlik', key: 'Health', ringColor: 'border-[#36273a] text-red-500' },
+                { name: 'Tajriba', key: 'Experience', ringColor: 'border-[#36273a] text-purple-400' },
+                { name: 'O\'rganish', key: 'Learning', ringColor: 'border-[#263b65] text-cyan-400' },
+                { name: 'Moliya', key: 'Financial', ringColor: 'border-[#233a36] text-green-500' },
+                { name: 'Mahsuldorlik', key: 'Productivity', ringColor: 'border-[#3a3528] text-yellow-500' },
+                { name: 'Umumiy', key: 'General', ringColor: 'border-[#3d2e26] text-amber-500' }
+            ];
+            
+            cats.forEach(c => {
+                const cq = appState.quests.filter(x => x.category === c.key && isQuestScheduledForToday(x));
+                let pct = 0;
+                if(cq.length > 0) pct = Math.round((cq.filter(x => x.completed).length / cq.length) * 100);
+
+                pGrid.innerHTML += `
+                    <div class="glass-card rounded-3xl p-4 text-center space-y-2 border border-purple-500/20 flex flex-col items-center justify-center bg-[#131022]">
+                        <div class="relative w-20 h-20 rounded-full border-4 ${c.ringColor} flex items-center justify-center shadow-inner">
+                            <span class="text-sm font-extrabold text-white">${pct}%</span>
+                        </div>
+                        <div class="text-xs text-gray-300 font-bold">${c.name}</div>
+                    </div>
+                `;
+            });
+        }
+
+        const todayQuests = appState.quests.filter(q => isQuestScheduledForToday(q));
+        const completedCount = todayQuests.filter(x => x.completed).length;
+        const streakEl = document.getElementById('statStreak');
+        const perfectEl = document.getElementById('statPerfect');
+        if(streakEl) streakEl.innerText = completedCount > 0 ? '1 kun' : '0 kun';
+        if(perfectEl) perfectEl.innerText = completedCount === todayQuests.length && todayQuests.length > 0 ? '1 kun' : '0 kun';
+    }
+
+    function renderAIAnalytics() {
+        const todayQuests = appState.quests.filter(q => isQuestScheduledForToday(q));
+        const badge = document.getElementById('aiCompletionRateBadge');
+        const textEl = document.getElementById('aiAnalysisText');
+        if(!badge || !textEl) return;
+
+        if(todayQuests.length === 0) {
+            badge.innerText = "0% bajarildi";
+            textEl.innerText = "Bugunga kvestlar belgilanmagan. Yangi kvest qo'shish tugmasini bosib bugungi rejangizni tuzing!";
+            return;
+        }
+
+        const completed = todayQuests.filter(q => q.completed).length;
+        const pct = Math.round((completed / todayQuests.length) * 100);
+        badge.innerText = `${pct}% bajarildi`;
+
+        if(pct === 100) {
+            textEl.innerText = "Ajoyib! Yaratuvchim, bugungi barcha kvestlarni muvaffaqiyatli yakunladingiz. Zo'r mahsuldorlik!";
+        } else if(pct >= 50) {
+            textEl.innerText = `Yaxshi ketyapsiz! Bugungi ${todayQuests.length} ta kvestdan ${completed} tasi bajarildi. Qolganlarini ham tugatib qo'ying!`;
+        } else if(completed > 0) {
+            textEl.innerText = `Boshlanishi yomon emas! Bugungi kvestlarning ${pct}% qismi bajarildi. Diqqatni jamlab davom eting!`;
+        } else {
+            textEl.innerText = `Bugun hali kvestlar bajarilmadi. Bugungi ${todayQuests.length} ta rejalashtirilgan vazifangiz sizni kutmoqda!`;
+        }
+    }
+
+    function renderProfile() {
+        const nameDisp = document.getElementById('profileNameDisplay');
+        if(nameDisp) nameDisp.innerText = appState.profileName || 'ROSKHALIYEV';
+        
+        const totalPts = document.getElementById('profileTotalPts');
+        if(totalPts) totalPts.innerText = appState.totalPoints;
+        
+        const xpText = document.getElementById('profileXpText');
+        if(xpText) xpText.innerText = `${appState.xp}/${appState.maxXp} XP`;
+        
+        const lvlBadge = document.getElementById('profileLvlBadge');
+        if(lvlBadge) lvlBadge.innerText = `DARAJA ${appState.level}`;
+        
+        const lvlText = document.getElementById('profileLvlText');
+        if(lvlText) lvlText.innerText = `DARAJA ${appState.level}`;
+        
+        const xpBar = document.getElementById('profileXpBar');
+        if(xpBar) {
+            const xpPercent = Math.min(100, (appState.xp / appState.maxXp) * 100);
+            xpBar.style.width = xpPercent + '%';
+        }
+
+        const miniCal = document.getElementById('profileMiniCalendar');
+        if(miniCal) {
+            miniCal.innerHTML = '';
+            const now = new Date();
+            const daysInMonth = new Date(now.getFullYear(), now.getMonth() + 1, 0).getDate();
+            const currentDay = now.getDate();
+
+            for(let i=1; i<=daysInMonth; i++) {
+                let bg = 'text-gray-400';
+                if(i === currentDay) bg = 'bg-red-500 text-white font-bold rounded';
+                miniCal.innerHTML += `<div class="py-1 ${bg}">${i}</div>`;
+            }
+        }
+
+        const healthPctEl = document.getElementById('profileHealthPct');
+        const healthCenterEl = document.getElementById('profileHealthCenterPct');
+        if(healthPctEl) healthPctEl.innerText = appState.healthPct + '%';
+        if(healthCenterEl) healthCenterEl.innerText = appState.healthPct + '%';
+
+        const notesDisp = document.getElementById('profileDailyNotesDisplay');
+        if(notesDisp) notesDisp.innerText = appState.dailyNotes;
+
+        if(appState.moods.length > 0) {
+            const moodEmoji = document.getElementById('profileMoodEmoji');
+            const moodText = document.getElementById('profileMoodText');
+            if(moodEmoji) moodEmoji.innerText = appState.moods[0].emoji;
+            if(moodText) moodText.innerText = appState.moods[0].mood;
+        }
+
+        const todayQuests = appState.quests.filter(q => isQuestScheduledForToday(q));
+        const completedCount = todayQuests.filter(x => x.completed).length;
+        const avgDaily = document.getElementById('statAverageDaily');
+        const compPct = document.getElementById('statCompletionPct');
+        if(avgDaily) avgDaily.innerText = completedCount;
+        if(compPct) {
+            const p = todayQuests.length > 0 ? Math.round((completedCount / todayQuests.length) * 100) : 0;
+            compPct.innerText = p + '%';
+        }
+
+        const achCard = document.getElementById('achievementCard');
+        const achIcon = document.getElementById('achievementIcon');
+        if(completedCount > 0 && achCard && achIcon) {
+            achCard.classList.remove('opacity-50');
+            achIcon.className = "fa-solid fa-medal text-sm text-yellow-400";
+        }
+
+        const sList = document.getElementById('profileSkillPointsDetailed');
+        if(sList) {
+            sList.innerHTML = '';
+            const categories = [
+                { name: 'SALOMATLIK', icon: 'fa-heart text-pink-400', pts: todayQuests.filter(q => q.category === 'Health' && q.completed).length * 5 },
+                { name: 'TAJRIBA', icon: 'fa-graduation-cap text-purple-400', pts: todayQuests.filter(q => q.category === 'Experience' && q.completed).length * 5 },
+                { name: 'O\'RGANISH', icon: 'fa-book text-cyan-400', pts: todayQuests.filter(q => q.category === 'Learning' && q.completed).length * 5 },
+                { name: 'MOLIYA', icon: 'fa-wallet text-green-400', pts: todayQuests.filter(q => q.category === 'Financial' && q.completed).length * 5 },
+                { name: 'MAHSULDORLIK', icon: 'fa-chart-line text-yellow-400', pts: todayQuests.filter(q => q.category === 'Productivity' && q.completed).length * 5 },
+                { name: 'UMUMIY', icon: 'fa-star text-yellow-400', pts: todayQuests.filter(q => q.category === 'General' && q.completed).length * 5 }
+            ];
+            categories.forEach(c => {
+                sList.innerHTML += `
+                    <div class="space-y-1">
+                        <div class="flex justify-between items-center text-[11px]">
+                            <span class="text-gray-300 font-bold"><i class="fa-solid ${c.icon} mr-1.5"></i>${c.name}</span>
+                            <span class="font-bold text-white">${c.pts}</span>
+                        </div>
+                        <div class="w-full bg-[#1e1936] h-1.5 rounded-full overflow-hidden">
+                            <div class="bg-purple-500 h-full" style="width: ${c.pts > 0 ? '100%' : '0%'};"></div>
+                        </div>
+                    </div>
+                `;
+            });
+        }
+    }
+
+    function renderSkillRadar() {
+        const canvas = document.getElementById('skillRadarCanvas');
+        if (!canvas) return;
+        const ctx = canvas.getContext('2d');
+        const w = canvas.width;
+        const h = canvas.height;
+        const cx = w / 2;
+        const cy = h / 2;
+        const radius = 38;
+
+        ctx.clearRect(0, 0, w, h);
+
+        ctx.strokeStyle = '#262145';
+        ctx.lineWidth = 1;
+        [0.3, 0.6, 1].forEach(factor => {
+            ctx.beginPath();
+            ctx.arc(cx, cy, radius * factor, 0, Math.PI * 2);
+            ctx.stroke();
+        });
+
+        const cats = ['Health', 'Experience', 'Learning', 'Productivity'];
+        const angles = [-Math.PI/2, 0, Math.PI/2, Math.PI];
+
+        const todayQuests = appState.quests.filter(q => isQuestScheduledForToday(q));
+
+        const scores = cats.map(cat => {
+            const total = todayQuests.filter(q => q.category === cat).length;
+            if (total === 0) return 0.15;
+            const comp = todayQuests.filter(q => q.category === cat && q.completed).length;
+            return Math.max(0.2, comp / total);
+        });
+
+        ctx.beginPath();
+        scores.forEach((score, i) => {
+            const angle = angles[i];
+            const r = radius * score;
+            const x = cx + r * Math.cos(angle);
+            const y = cy + r * Math.sin(angle);
+            if (i === 0) ctx.moveTo(x, y);
+            else ctx.lineTo(x, y);
+        });
+        ctx.closePath();
+        ctx.fillStyle = 'rgba(168, 85, 247, 0.35)';
+        ctx.fill();
+        ctx.strokeStyle = '#a855f7';
+        ctx.lineWidth = 1.5;
+        ctx.stroke();
+    }
+
+    function renderMoods() {
+        const mList = document.getElementById('moodHistoryList');
+        if(!mList) return;
+        mList.innerHTML = '';
+        if(appState.moods.length === 0) {
+            mList.innerHTML = `<div class="text-center text-xs text-gray-500 py-6">Kayfiyat qayd etilmagan</div>`;
+        } else {
+            appState.moods.forEach(m => {
+                mList.innerHTML += `
+                    <div class="glass-card rounded-2xl p-4 flex items-center justify-between">
+                        <div>
+                            <div class="text-[10px] text-gray-400">${m.date}</div>
+                            <div class="text-sm font-extrabold text-white mt-0.5">${m.mood} ${m.emoji}</div>
+                        </div>
+                        <i class="fa-solid fa-face-smile text-purple-400 text-base"></i>
+                    </div>
+                `;
+            });
+        }
+    }
+</script>
+</body>
+</html>
